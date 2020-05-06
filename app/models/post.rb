@@ -6,6 +6,6 @@ class Post < ActiveRecord::Base
   validates :category, inclusion: {in: %w(Fiction Non-fiction)}
   
   def non_clickbait
-    errors.add(:title, "cannot contain the characters")
+    errors.add(:title, "cannot contain the characters ")
   end 
 end 
