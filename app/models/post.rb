@@ -7,6 +7,6 @@ class Post < ActiveRecord::Base
   
   def non_clickbait
     errors.add(:title, "cannot contain the characters 
-    Won't Believe "Secret", "Top [number]", "Guess", ")
+    Won't Believe Secret, Top [number], Guess ")
   end 
 end 
